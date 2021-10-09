@@ -17,6 +17,7 @@ class ProductListFragment :  Fragment(R.layout.product_list_fragment) {
     private val viewModel by viewModels<ProductListFragmentViewModel>()
 
     private lateinit var adapter: ProductListAdapter
+
     private lateinit var binding: ProductListFragmentBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ConstructorParameterNaming:CartResponseModel.kt$CartResponseModel$val V: Int? = null</ID>
+    <ID>FunctionParameterNaming:NetworkModule.kt$NetworkModule$BASE_URL: String</ID>
+    <ID>MaxLineLength:BaseListAdapter.kt$BaseListAdapter$abstract</ID>
+    <ID>MaxLineLength:ProductListAdapter.kt$ProductListAdapter$class</ID>
+    <ID>MaximumLineLength:com.dogancankilic.kotlinbase.core.platform.BaseListAdapter.kt:8</ID>
+    <ID>MaximumLineLength:com.dogancankilic.kotlinbase.presentation.products.adapter.ProductListAdapter.kt:11</ID>
+    <ID>NoWildcardImports:com.dogancankilic.kotlinbase.ExampleUnitTest.kt:3</ID>
+    <ID>NoWildcardImports:com.dogancankilic.kotlinbase.core.platform.BaseViewModel.kt:10</ID>
+    <ID>NoWildcardImports:com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel.kt:5</ID>
+    <ID>ParameterListWrapping:com.dogancankilic.kotlinbase.core.platform.BaseListAdapter.kt:8</ID>
+    <ID>UnnecessaryAbstractClass:GenericRequest.kt$GenericRequest</ID>
+    <ID>UnnecessaryAbstractClass:ListAdapterItem.kt$ListAdapterItem</ID>
+    <ID>WildcardImport:BaseViewModel.kt$import kotlinx.coroutines.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

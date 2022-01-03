@@ -1,0 +1,45 @@
+package com.dogancankilic.kotlinbase.presentation.products
+
+import androidx.navigation.fragment.findNavController
+import com.dogancankilic.kotlinbase.R
+import com.dogancankilic.kotlinbase.core.extension.observe
+import com.dogancankilic.kotlinbase.core.platform.BaseFragment
+import com.dogancankilic.kotlinbase.databinding.ProductListFragmentBinding
+import com.dogancankilic.kotlinbase.presentation.products.adapter.ProductListAdapter
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class ProductListFragment :
+    BaseFragment<ProductListFragmentBinding, ProductListFragmentViewModel>() {
+
+    private lateinit var adapter: ProductListAdapter
+
+    override fun initView() {
+        adapter = ProductListAdapter()
+
+        binding.rvProducts.adapter = adapter
+        if (viewModel.products.value == null) {
+            viewModel.getProducts()
+        }
+
+        observeViewState()
+    }
+
+    private fun observeViewState() {
+        val adapter = binding.rvProducts.adapter as ProductListAdapter
+
+        observe(viewModel.products) {
+            adapter.submitList(it.data)
+        }
+        adapter.itemClickListener = {
+            onItemClick()
+        }
+    }
+
+    fun onItemClick() {
+        val action = ProductListFragmentDirections.navigateToProductDetail()
+        findNavController().navigate(action)
+    }
+
+    override fun layoutRes(): Int = R.layout.product_list_fragment
+}

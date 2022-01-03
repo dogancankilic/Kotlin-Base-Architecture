@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainGamesFragment">
+    app:startDestination="@id/products">
     <fragment
-        android:id="@+id/mainGamesFragment"
-        android:name="com.dogancankilic.kotlin_base_architecture.presentation.products.ProductListFragment"
-        android:label="fragment_main_games_list"
+        android:id="@+id/products"
+        android:name="com.dogancankilic.kotlinbase.presentation.products.ProductListFragment"
+        android:label="Products"
         tools:layout="@layout/product_list_fragment" >
+        <action
+            android:id="@+id/navigateToProductDetail"
+            app:destination="@id/detailsFragment"
+
+            />
+
 
     </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.dogancankilic.kotlinbase.presentation.products.productdetail.ProductDetailFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/product_detail_fragment" >
+    </fragment>
+
 
 </navigation>

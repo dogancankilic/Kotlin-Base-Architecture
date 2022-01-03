@@ -5,33 +5,32 @@
 
     <data>
 
+        <variable
+            name="item"
+            type="com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel" />
+
 
     </data>
-    <LinearLayout
-        android:orientation="horizontal"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="75dp">
 
         <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/tvProductDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_margin="20dp"
             android:maxLines="3"
             android:ellipsize="end"
-            tools:text="Knorr Çabuk Noodle Acılı Domatesli 66 Gr" />
+            android:text="@{item.description}"
+             />
 
-        <TextView
-            android:id="@+id/tvProductCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:layout_margin="20dp"
-            android:maxLines="3"
-            android:ellipsize="end"
-            tools:text="3 item" />
 
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

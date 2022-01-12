@@ -7,21 +7,25 @@ import com.dogancankilic.kotlinbase.di.Repository
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 import javax.inject.Inject
 
+/**
+ * Get products
+ */
 class ProductsUseCase @Inject constructor(@Repository private val remoteDataSource: ProductsDataSource) :
     BaseUseCaseWithoutParams<MutableList<ProductsUiModel>>() {
     override suspend fun run(): MutableList<ProductsUiModel> {
-        return mapResponseModelToUiModel(remoteDataSource.movies())
+        return mapResponseModelToUiModel(remoteDataSource.products())
     }
 
-    fun mapResponseModelToUiModel(responseList: MutableList<ProductsResponseModel>):
+    private fun mapResponseModelToUiModel(responseList: MutableList<ProductsResponseModel>):
         MutableList<ProductsUiModel> = responseList.map {
         ProductsUiModel(
             it.image,
-            it.price,
+            it.price.toString(),
             it.rating,
             it.description,
             it.title,
-            it.category
+            it.category,
+            it.id.toString()
 
         )
     } as MutableList<ProductsUiModel>

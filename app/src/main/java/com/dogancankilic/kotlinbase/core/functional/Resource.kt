@@ -1,7 +1,13 @@
 package com.dogancankilic.kotlinbase.core.functional
 
+/**
+ * Resource wrapper
+ */
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
 
+    /**
+     * Enum for Status
+     */
     enum class Status {
         SUCCESS,
         ERROR,

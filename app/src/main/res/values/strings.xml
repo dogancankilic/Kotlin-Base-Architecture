@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kotlin-Base-Architecture</string>
+    // Product Detail
+    <string name="productId">productId</string>
 </resources>

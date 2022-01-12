@@ -1,8 +1,10 @@
 package com.dogancankilic.kotlinbase.data.products.model
 
-import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 import com.google.gson.annotations.SerializedName
 
+/**
+ * Response model for products
+ */
 data class ProductsResponseModel(
     @SerializedName("id") var id: Int,
     @SerializedName("title") var title: String,
@@ -13,17 +15,12 @@ data class ProductsResponseModel(
     @SerializedName("rating") var rating: Rating
 )
 
-fun List<ProductsResponseModel>.groupBySeasons() =
-    map {
-
-        ProductsUiModel(
-            it.image,
-            it.price,
-            it.rating,
-            it.description,
-            it.title,
-            it.category,
-            it.id.toString(),
-
-        )
-    }
+/**
+ * Rating model for products
+ */
+data class Rating(
+    @SerializedName("count")
+    val count: Int,
+    @SerializedName("rate")
+    val rate: Double
+)

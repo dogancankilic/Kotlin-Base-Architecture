@@ -1,5 +1,8 @@
 package com.dogancankilic.kotlinbase.core.functional
 
+/**
+ * Call the network operations
+ */
 object RequestInvoker {
     suspend fun <T> apiRequest(call: suspend () -> T): Result<T> =
 

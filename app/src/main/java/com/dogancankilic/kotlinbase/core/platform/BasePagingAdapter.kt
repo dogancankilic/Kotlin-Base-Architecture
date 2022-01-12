@@ -5,6 +5,9 @@ import androidx.databinding.ViewDataBinding
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 
+/**
+ * Base Paging Adapter
+ */
 abstract class BasePagingAdapter<T : ListAdapterItem, VB : ViewDataBinding>(
     diffCallback: DiffUtil.ItemCallback<T>
 ) : PagingDataAdapter<T, BaseViewHolder<VB>>(diffCallback) {

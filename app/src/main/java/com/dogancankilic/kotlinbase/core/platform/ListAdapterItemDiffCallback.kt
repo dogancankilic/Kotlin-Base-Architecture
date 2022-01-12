@@ -3,6 +3,9 @@ package com.dogancankilic.kotlinbase.core.platform
 import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil
 
+/**
+ * Diff Util for RecyclerView
+ */
 class ListAdapterItemDiffCallback<T : ListAdapterItem> : DiffUtil.ItemCallback<T>() {
 
     override fun areItemsTheSame(oldItem: T, newItem: T):

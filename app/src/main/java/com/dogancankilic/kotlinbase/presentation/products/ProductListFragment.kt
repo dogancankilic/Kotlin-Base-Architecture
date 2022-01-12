@@ -8,6 +8,9 @@ import com.dogancankilic.kotlinbase.databinding.ProductListFragmentBinding
 import com.dogancankilic.kotlinbase.presentation.products.adapter.ProductListAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * ProductList Fragment
+ */
 @AndroidEntryPoint
 class ProductListFragment :
     BaseFragment<ProductListFragmentBinding, ProductListFragmentViewModel>() {
@@ -26,18 +29,18 @@ class ProductListFragment :
     }
 
     private fun observeViewState() {
-        val adapter = binding.rvProducts.adapter as ProductListAdapter
+        // val adapter = binding.rvProducts.adapter as ProductListAdapter
 
         observe(viewModel.products) {
             adapter.submitList(it.data)
         }
-        adapter.itemClickListener = {
-            onItemClick()
+        adapter.itemClickListener = { item ->
+            onItemClick(item.id)
         }
     }
 
-    fun onItemClick() {
-        val action = ProductListFragmentDirections.navigateToProductDetail()
+    fun onItemClick(id: String) {
+        val action = ProductListFragmentDirections.navigateToProductDetail(id)
         findNavController().navigate(action)
     }
 

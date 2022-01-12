@@ -8,6 +8,9 @@ import com.dogancankilic.kotlinbase.core.platform.ListAdapterItemDiffCallback
 import com.dogancankilic.kotlinbase.databinding.ProductListItemBinding
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 
+/**
+ * Product list adapter
+ */
 class ProductListAdapter :
     BaseListAdapter<ProductsUiModel, ProductListItemBinding>(
         ListAdapterItemDiffCallback()

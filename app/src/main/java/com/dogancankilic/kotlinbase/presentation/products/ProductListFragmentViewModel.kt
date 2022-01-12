@@ -8,6 +8,9 @@ import com.dogancankilic.kotlinbase.domain.products.ProductsUseCase
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 import javax.inject.Inject
 
+/**
+ * ViewModel for [ProductListFragment]
+ */
 class ProductListFragmentViewModel @Inject constructor(
     private val productsUseCase: ProductsUseCase,
 ) : BaseViewModel() {

@@ -7,9 +7,14 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavDirections
 import com.dogancankilic.kotlinbase.core.interactor.BaseUseCase
 import com.dogancankilic.kotlinbase.core.interactor.BaseUseCaseWithoutParams
-import kotlinx.coroutines.*
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.supervisorScope
 import retrofit2.HttpException
 
+/**
+ * Base ViewModel
+ */
 abstract class BaseViewModel : ViewModel() {
 
     private val _onNavigateState = MutableLiveData<Event<NavDirections>>()

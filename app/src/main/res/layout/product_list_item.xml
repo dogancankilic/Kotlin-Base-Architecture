@@ -11,26 +11,71 @@
 
 
     </data>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/llMain"
-        android:layout_width="match_parent"
-        android:layout_height="75dp">
 
-        <TextView
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/tvProductDesc"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="5dp"
+        app:strokeColor="@color/purple_200"
+        app:cardElevation="10dp"
+        app:rippleColor="@color/orange"
+        app:cardCornerRadius="3dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llMain"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:layout_margin="20dp"
-            android:maxLines="3"
-            android:ellipsize="end"
-            android:text="@{item.description}"
-             />
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:imageUrl = "@{item.image}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/ivProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@mipmap/demo">
+
+            </ImageView>
 
 
+            <TextView
+                android:id="@+id/tvProductTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:ellipsize="end"
+                android:text="@{item.title}"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivProduct"
+                tools:text="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@{item.price}"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProductTitle"
+                app:layout_constraintVertical_bias="0.859"
+                tools:text="102" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 </layout>

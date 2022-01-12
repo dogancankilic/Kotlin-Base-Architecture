@@ -8,20 +8,29 @@
         android:id="@+id/products"
         android:name="com.dogancankilic.kotlinbase.presentation.products.ProductListFragment"
         android:label="Products"
-        tools:layout="@layout/product_list_fragment" >
+        tools:layout="@layout/product_list_fragment">
+
         <action
             android:id="@+id/navigateToProductDetail"
-            app:destination="@id/detailsFragment"
+            app:destination="@id/detailsFragment">
 
-            />
+            <argument
+                android:name="@string/productId"
+                app:argType="string"
+                />
+
+        </action>
 
 
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.dogancankilic.kotlinbase.presentation.products.productdetail.ProductDetailFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/product_detail_fragment" >
+        android:name="com.dogancankilic.kotlinbase.presentation.productdetail.ProductDetailFragment"
+        android:label="Product Detail"
+        tools:layout="@layout/product_detail_fragment">
+        <argument
+            android:name="@string/productId"
+            app:argType="string" />
     </fragment>
 
 

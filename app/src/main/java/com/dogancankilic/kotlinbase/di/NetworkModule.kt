@@ -18,6 +18,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Qualifier
 import javax.inject.Singleton
 
+/**
+ * Provide retrofit and services
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -47,32 +50,35 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideApiService(retrofit: Retrofit): ProductsService = retrofit.create(ProductsService::class.java)
-
-    @Singleton
-    @Provides
-    fun provideProductRepository(
-        @RemoteDataSource remoteDataSource: ProductsDataSource
-    ):
-        ProductsRepository = ProductsRepository(remoteDataSource)
+    fun provideProductApiService(retrofit: Retrofit): ProductsService =
+        retrofit.create(ProductsService::class.java)
 }
+
 /**
  * Provide data source implementations for repositories
  */
 @InstallIn(SingletonComponent::class)
 @Module
-@SuppressWarnings("UndocumentedPublicFunction", "TooManyFunctions")
 abstract class DataSourceModule {
-    @Repository
-    @Singleton
-    @Binds
-    abstract fun provideProductRepository(productsRepository: ProductsRepository): ProductsDataSource
 
     @RemoteDataSource
     @Singleton
     @Binds
     abstract fun provideProductRemoteDataSource(productsRemoteDataSource: ProductsRemoteDataSource):
         ProductsDataSource
+}
+
+/**
+ * Provide repositories for use case layer
+ */
+@InstallIn(SingletonComponent::class)
+@Module
+abstract class RepositoryModule {
+
+    @Repository
+    @Singleton
+    @Binds
+    abstract fun provideProductRepository(productsRepository: ProductsRepository): ProductsDataSource
 }
 
 /**

@@ -2,6 +2,9 @@ package com.dogancankilic.kotlinbase.core.interactor
 
 import com.dogancankilic.kotlinbase.core.functional.RequestInvoker
 
+/**
+ * Every UseCase must inherit [BaseUseCase] or [BaseUseCaseWithoutParams]
+ */
 abstract class BaseUseCase<out Type, in Params> where Type : Any {
 
     abstract suspend fun run(params: Params): Type

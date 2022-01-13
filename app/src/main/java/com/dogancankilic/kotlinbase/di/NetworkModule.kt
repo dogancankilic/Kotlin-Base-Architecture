@@ -3,8 +3,7 @@ package com.dogancankilic.kotlinbase.di
 import com.dogancankilic.kotlinbase.BuildConfig
 import com.dogancankilic.kotlinbase.core.Constants
 import com.dogancankilic.kotlinbase.data.products.ProductsDataSource
-import com.dogancankilic.kotlinbase.data.products.ProductsRemoteDataSource
-import com.dogancankilic.kotlinbase.data.products.ProductsRepository
+import com.dogancankilic.kotlinbase.data.products.ProductsDataSourceImpl
 import com.dogancankilic.kotlinbase.data.products.ProductsService
 import dagger.Binds
 import dagger.Module
@@ -15,7 +14,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Qualifier
 import javax.inject.Singleton
 
 /**
@@ -55,40 +53,14 @@ object NetworkModule {
 }
 
 /**
- * Provide data source implementations for repositories
+ * Provide data source implementations
  */
 @InstallIn(SingletonComponent::class)
 @Module
 abstract class DataSourceModule {
 
-    @RemoteDataSource
     @Singleton
     @Binds
-    abstract fun provideProductRemoteDataSource(productsRemoteDataSource: ProductsRemoteDataSource):
+    abstract fun provideProductRemoteDataSource(productsRemoteDataSource: ProductsDataSourceImpl):
         ProductsDataSource
 }
-
-/**
- * Provide repositories for use case layer
- */
-@InstallIn(SingletonComponent::class)
-@Module
-abstract class RepositoryModule {
-
-    @Repository
-    @Singleton
-    @Binds
-    abstract fun provideProductRepository(productsRepository: ProductsRepository): ProductsDataSource
-}
-
-/**
- * Indicates Data Source is Remote Data Source
- */
-@Qualifier
-annotation class RemoteDataSource
-
-/**
- * Indicates Data Source is Repository
- */
-@Qualifier
-annotation class Repository

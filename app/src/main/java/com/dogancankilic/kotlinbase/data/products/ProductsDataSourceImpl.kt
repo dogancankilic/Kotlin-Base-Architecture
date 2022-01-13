@@ -1,20 +1,19 @@
 package com.dogancankilic.kotlinbase.data.products
 
 import com.dogancankilic.kotlinbase.data.products.model.ProductsResponseModel
-import com.dogancankilic.kotlinbase.di.RemoteDataSource
 import javax.inject.Inject
 
 /**
- * Executing remote or local data sources
+ * Calls for network services
  */
-class ProductsRepository @Inject constructor(
-    @RemoteDataSource private val remoteDataSource: ProductsDataSource
+class ProductsDataSourceImpl @Inject constructor(
+    private val productsService: ProductsService,
 ) : ProductsDataSource {
     override suspend fun products(): MutableList<ProductsResponseModel> {
-        return remoteDataSource.products()
+        return productsService.getProducts()
     }
 
     override suspend fun productDetail(id: Int): ProductsResponseModel {
-        return remoteDataSource.productDetail(id)
+        return productsService.getProduct(id)
     }
 }

@@ -1,7 +1,10 @@
 package com.dogancankilic.kotlinbase.core.extension
 
+import android.content.Context
+import androidx.annotation.RawRes
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
+import com.google.gson.Gson
 
 /**
  * Adds the given observer to the observers list within the lifespan of the given
@@ -19,3 +22,6 @@ fun <T> LifecycleOwner.observe(liveData: LiveData<T>, observer: (T) -> Unit) {
         it?.let { t -> observer(t) }
     }
 }
+
+inline fun <reified T> Context.jsonToClass(@RawRes resourceId: Int): T =
+    Gson().fromJson(resources.openRawResource(resourceId).bufferedReader().use { it.readText() }, T::class.java)

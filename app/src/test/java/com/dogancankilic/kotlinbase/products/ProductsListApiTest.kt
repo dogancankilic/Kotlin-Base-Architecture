@@ -21,6 +21,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 
+/**
+ * Integration test with [MockWebServer]
+ */
 @RunWith(JUnit4::class)
 class ProductsListApiTest {
     @get:Rule
@@ -52,7 +55,9 @@ class ProductsListApiTest {
     @Test
     fun testApiSuccess() {
         // Given
-        mockedResponse = File("src\\test\\java\\com\\resources\\products\\products_list.json").bufferedReader().use { it.readText() }
+        mockedResponse =
+            File("src\\test\\java\\com\\resources\\products\\products_list.json").bufferedReader()
+                .use { it.readText() }
 
         server.enqueue(
             MockResponse()
@@ -62,7 +67,8 @@ class ProductsListApiTest {
         // When
         val response = runBlocking { productsDataSourceImpl.products() }
 
-        val expectedResponse = gson?.fromJson(mockedResponse, Array<ProductsResponseModel>::class.java)?.toList()
+        val expectedResponse =
+            gson?.fromJson(mockedResponse, Array<ProductsResponseModel>::class.java)?.toList()
 
         // Then
         response.shouldNotBeEmpty()

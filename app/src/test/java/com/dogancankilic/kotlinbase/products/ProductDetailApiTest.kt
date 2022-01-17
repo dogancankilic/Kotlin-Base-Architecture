@@ -20,6 +20,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.io.File
 
+/**
+ * Integration test with [MockWebServer]
+ */
 @RunWith(JUnit4::class)
 class ProductDetailApiTest {
 
@@ -54,7 +57,9 @@ class ProductDetailApiTest {
     @Test
     fun testApiSuccess() {
         // Given
-        mockedResponse = File("src\\test\\java\\com\\resources\\products\\product_detail_response.json").bufferedReader().use { it.readText() }
+        mockedResponse =
+            File("src\\test\\java\\com\\resources\\products\\product_detail_response.json").bufferedReader()
+                .use { it.readText() }
 
         server.enqueue(
             MockResponse()

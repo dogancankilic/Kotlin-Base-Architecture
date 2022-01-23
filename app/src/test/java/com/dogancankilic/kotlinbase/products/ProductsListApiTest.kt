@@ -38,7 +38,7 @@ class ProductsListApiTest {
         .create()
 
     @Before
-    fun init() {
+    fun setUp() {
         val okHttpClient = OkHttpClient
             .Builder()
             .build()

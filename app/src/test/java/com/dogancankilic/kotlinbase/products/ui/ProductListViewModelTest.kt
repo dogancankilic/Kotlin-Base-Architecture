@@ -1,8 +1,8 @@
 package com.dogancankilic.kotlinbase.products.ui
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.dogancankilic.kotlinbase.domain.productdetail.ProductDetailUseCase
-import com.dogancankilic.kotlinbase.presentation.productdetail.ProductDetailViewModel
+import com.dogancankilic.kotlinbase.domain.products.ProductsUseCase
+import com.dogancankilic.kotlinbase.presentation.products.ProductListFragmentViewModel
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 import com.util.TestCoroutineRule
 import io.mockk.coEvery
@@ -15,25 +15,21 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestRule
 
-/**
- * ProductDetailViewModelTest
- */
 @ExperimentalCoroutinesApi
-class ProductDetailViewModelTest {
-
+class ProductListViewModelTest {
     @get:Rule
     val coroutineTestRule = TestCoroutineRule()
 
     @get:Rule
     var rule: TestRule = InstantTaskExecutorRule()
 
-    private val productDetailUseCase = mockk<ProductDetailUseCase>()
+    private val productsUseCase = mockk<ProductsUseCase>()
 
-    private lateinit var viewModel: ProductDetailViewModel
+    private lateinit var viewModel: ProductListFragmentViewModel
 
     @Before
     fun setUp() {
-        viewModel = ProductDetailViewModel(productDetailUseCase)
+        viewModel = ProductListFragmentViewModel(productsUseCase)
     }
 
     @Test
@@ -41,16 +37,16 @@ class ProductDetailViewModelTest {
         coroutineTestRule.runBlockingTest {
 
             // Given
-            val expectedResponse = mockk<ProductsUiModel>()
-            coEvery { productDetailUseCase.execute(2) } returns Result.success(expectedResponse)
+            val expectedResponse = mockk<MutableList<ProductsUiModel>>()
+            coEvery { productsUseCase.execute() } returns Result.success(expectedResponse)
 
             // When
-            viewModel.getProduct("2")
-            val response = viewModel.product.value
+            viewModel.getProducts()
+            val response = viewModel.products.value
 
             // Then
-            coVerify(exactly = 1) { productDetailUseCase.execute(2) }
-            response shouldBeEqualTo expectedResponse
+            coVerify(exactly = 1) { productsUseCase.execute() }
+            response?.data shouldBeEqualTo expectedResponse
         }
     }
 }

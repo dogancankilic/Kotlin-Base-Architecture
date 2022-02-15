@@ -1,4 +1,4 @@
-package com.dogancankilic.kotlinbase.core.functional
+package com.dogancankilic.kotlinbase.core.util
 
 /**
  * Resource wrapper

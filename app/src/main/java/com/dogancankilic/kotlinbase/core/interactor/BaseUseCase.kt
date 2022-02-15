@@ -1,6 +1,6 @@
 package com.dogancankilic.kotlinbase.core.interactor
 
-import com.dogancankilic.kotlinbase.core.functional.RequestInvoker
+import com.dogancankilic.kotlinbase.core.util.RequestInvoker
 
 /**
  * Every UseCase must inherit [BaseUseCase] or [BaseUseCaseWithoutParams]

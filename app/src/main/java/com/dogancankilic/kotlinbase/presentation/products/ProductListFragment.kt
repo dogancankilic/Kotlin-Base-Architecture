@@ -3,6 +3,7 @@ package com.dogancankilic.kotlinbase.presentation.products
 import androidx.navigation.fragment.findNavController
 import com.dogancankilic.kotlinbase.R
 import com.dogancankilic.kotlinbase.core.extension.observe
+import com.dogancankilic.kotlinbase.core.util.CountingIdlingResourceSingleton
 import com.dogancankilic.kotlinbase.core.platform.BaseFragment
 import com.dogancankilic.kotlinbase.databinding.ProductListFragmentBinding
 import com.dogancankilic.kotlinbase.presentation.products.adapter.ProductListAdapter
@@ -21,7 +22,9 @@ class ProductListFragment :
         adapter = ProductListAdapter()
 
         binding.rvProducts.adapter = adapter
+
         if (viewModel.products.value == null) {
+            CountingIdlingResourceSingleton.increment()
             viewModel.getProducts()
         }
 
@@ -31,8 +34,11 @@ class ProductListFragment :
     private fun observeViewState() {
         // val adapter = binding.rvProducts.adapter as ProductListAdapter
 
+        val jobOnComplete = Runnable {
+            CountingIdlingResourceSingleton.decrement()
+        }
         observe(viewModel.products) {
-            adapter.submitList(it.data)
+            adapter.submitList(it.data, jobOnComplete)
         }
         adapter.itemClickListener = { item ->
             onItemClick(item.id)

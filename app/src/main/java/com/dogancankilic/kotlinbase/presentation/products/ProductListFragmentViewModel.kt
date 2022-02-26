@@ -2,8 +2,8 @@ package com.dogancankilic.kotlinbase.presentation.products
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.dogancankilic.kotlinbase.core.util.Resource
 import com.dogancankilic.kotlinbase.core.platform.BaseViewModel
+import com.dogancankilic.kotlinbase.core.util.Resource
 import com.dogancankilic.kotlinbase.domain.products.ProductsUseCase
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
 import javax.inject.Inject

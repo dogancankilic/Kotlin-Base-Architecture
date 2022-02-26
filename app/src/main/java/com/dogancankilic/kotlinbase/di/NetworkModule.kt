@@ -22,6 +22,7 @@ import javax.inject.Singleton
  */
 @Module
 @InstallIn(SingletonComponent::class)
+@SuppressWarnings("MagicNumber")
 object NetworkModule {
 
     @Provides

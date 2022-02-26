@@ -1,4 +1,4 @@
-package com.dogancankilic.kotlinbase.core.util
+package com.dogancankilic.kotlinbase
 
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint

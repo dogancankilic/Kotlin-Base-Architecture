@@ -2,6 +2,9 @@ package com.dogancankilic.kotlinbase.core.util
 
 import androidx.test.espresso.idling.CountingIdlingResource
 
+/**
+ * Idling resource for espresso tests
+ */
 object CountingIdlingResourceSingleton {
 
     private const val RESOURCE = "GLOBAL"

@@ -4,6 +4,7 @@ import androidx.navigation.fragment.navArgs
 import com.dogancankilic.kotlinbase.R
 import com.dogancankilic.kotlinbase.core.extension.observe
 import com.dogancankilic.kotlinbase.core.platform.BaseFragment
+import com.dogancankilic.kotlinbase.core.util.CountingIdlingResourceSingleton
 import com.dogancankilic.kotlinbase.databinding.ProductDetailFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -18,9 +19,11 @@ class ProductDetailFragment : BaseFragment<ProductDetailFragmentBinding, Product
         navArgs<ProductDetailFragmentArgs>().value.run {
 
             viewModel.getProduct(stringProductId)
+            CountingIdlingResourceSingleton.increment()
 
             observe(viewModel.product) {
                 binding.tvName.text = it.title
+                CountingIdlingResourceSingleton.decrement()
             }
         }
     }

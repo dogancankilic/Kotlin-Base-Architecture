@@ -10,17 +10,17 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.dogancankilic.kotlin_base_architecture"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.dogancankilic.kotlinbase.presentation.util.TestRunner"
     }
     buildFeatures {
         dataBinding true
@@ -57,52 +57,76 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'com.squareup.okhttp3:mockwebserver:4.9.1'
-    testImplementation 'org.amshove.kluent:kluent-android:1.68'
     testImplementation "androidx.arch.core:core-testing:2.1.0"
-    testImplementation "io.mockk:mockk:1.12.2"
     testImplementation 'androidx.test.ext:junit:1.1.2-alpha03'
-    testImplementation 'org.mockito:mockito-core:3.12.4'
-    testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
-    testImplementation 'org.mockito:mockito-inline:3.0.0'
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.1'
-    testImplementation 'org.mockito.kotlin:mockito-kotlin:4.0.0'
+    // MockWebServer
+    testImplementation 'com.squareup.okhttp3:mockwebserver:4.9.1'
 
+    //Kluent
+    testImplementation 'org.amshove.kluent:kluent-android:1.68'
+
+    //Mockk
+    testImplementation "io.mockk:mockk:1.12.3"
+    androidTestImplementation "io.mockk:mockk-android:1.12.3"
+
+
+    //Mockito
+    // required if you want to use Mockito for unit tests
+    testImplementation 'org.mockito:mockito-core:4.0.0'
+    // required if you want to use Mockito for Android tests
+    androidTestImplementation 'org.mockito:mockito-android:2.24.5'
+
+    //Espresso Test Utils
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
+    debugImplementation 'androidx.fragment:fragment-testing:1.4.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation "androidx.navigation:navigation-testing:2.4.1"
+    implementation "androidx.navigation:navigation-runtime-ktx:2.4.1"
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.3.0'
 
+    //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
+    //Hilt
+    implementation 'com.google.dagger:hilt-android:2.41'
+    kapt 'com.google.dagger:hilt-compiler:2.41'
 
-    implementation "com.google.dagger:hilt-android:2.33-beta"
-    kapt "com.google.dagger:hilt-android-compiler:2.31.2-alpha"
+    // For instrumentation tests
+    androidTestImplementation  'com.google.dagger:hilt-android-testing:2.41'
+    kaptAndroidTest 'com.google.dagger:hilt-compiler:2.41'
 
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-    kapt "androidx.hilt:hilt-compiler:1.0.0"
+    // For local unit tests
+    testImplementation 'com.google.dagger:hilt-android-testing:2.41'
+    kaptTest 'com.google.dagger:hilt-compiler:2.41'
 
+
+    //KTX imports
     implementation "androidx.activity:activity-ktx:1.2.3"
-
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-
-
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
 
-    // Paging 3
-    implementation "androidx.paging:paging-runtime:3.0.0"
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 
+    //Paging 3
+    implementation "androidx.paging:paging-runtime-ktx:3.1.0"
 
-    implementation "androidx.navigation:navigation-fragment-ktx:2.4.0-alpha03"
-    implementation "androidx.navigation:navigation-ui-ktx:2.4.0-alpha03"
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.0-alpha02"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.0-alpha02"
 
-
+    //ViewPager
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     implementation 'me.relex:circleindicator:2.1.6'
 
@@ -110,13 +134,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
-    def room_version = "2.2.6" // check latest version from docs
-
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-
-    implementation 'androidx.room:room-ktx:2.2.1'
-    kapt "androidx.room:room-compiler:2.2.1"
+    //Timber
     implementation 'com.jakewharton.timber:timber:5.0.1'
 
 }

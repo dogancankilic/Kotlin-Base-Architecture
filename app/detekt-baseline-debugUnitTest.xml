@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>EmptyClassBlock:ProductListViewModel.kt$ProductListViewModel${ }</ID>
+    <ID>LibraryCodeMustSpecifyReturnType:ProductDetailApiTest.kt$ProductDetailApiTest$@get:Rule val instantExecutorRule = InstantTaskExecutorRule()</ID>
+    <ID>LibraryCodeMustSpecifyReturnType:ProductDetailViewModelTest.kt$ProductDetailViewModelTest$@get:Rule val coroutineTestRule = TestCoroutineRule()</ID>
+    <ID>LibraryCodeMustSpecifyReturnType:ProductsListApiTest.kt$ProductsListApiTest$@get:Rule val instantExecutorRule = InstantTaskExecutorRule()</ID>
+    <ID>LibraryCodeMustSpecifyReturnType:TestCoroutineRule.kt$TestCoroutineRule$fun runBlockingTest(block: suspend TestCoroutineScope.() -&gt; Unit)</ID>
+    <ID>LibraryCodeMustSpecifyReturnType:TestCoroutineRule.kt$TestCoroutineRule$override fun apply(base: Statement, description: Description?)</ID>
+    <ID>MagicNumber:ProductDetailApiTest.kt$ProductDetailApiTest$200</ID>
+    <ID>MagicNumber:ProductsListApiTest.kt$ProductsListApiTest$20</ID>
+    <ID>MagicNumber:ProductsListApiTest.kt$ProductsListApiTest$200</ID>
+    <ID>NewLineAtEndOfFile:LifeCycleTestOwner.kt$com.util.LifeCycleTestOwner.kt</ID>
+    <ID>NewLineAtEndOfFile:LiveDataTestUtil.kt$com.dogancankilic.kotlinbase.util.LiveDataTestUtil.kt</ID>
+    <ID>NewLineAtEndOfFile:ProductListViewModel.kt$com.dogancankilic.kotlinbase.products.ui.ProductListViewModel.kt</ID>
+    <ID>UndocumentedPublicClass:LifeCycleTestOwner.kt$LifeCycleTestOwner : LifecycleOwner</ID>
+    <ID>UndocumentedPublicClass:ProductListViewModel.kt$ProductListViewModel</ID>
+    <ID>UndocumentedPublicClass:TestCoroutineRule.kt$TestCoroutineRule : TestRule</ID>
+  </CurrentIssues>
+</SmellBaseline>

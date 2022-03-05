@@ -18,7 +18,6 @@ import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.File
 
 /**
  * Integration test with [MockWebServer]
@@ -31,7 +30,7 @@ class ProductDetailApiTest {
     private val server = MockWebServer()
     private lateinit var productsDataSourceImpl: ProductsDataSourceImpl
 
-    private lateinit var mockedResponse: String
+    // private lateinit var mockedResponse: String
 
     private lateinit var service: ProductsService
 
@@ -57,9 +56,29 @@ class ProductDetailApiTest {
     @Test
     fun testApiSuccess() {
         // Given
-        mockedResponse =
+
+        // Github actions on ubuntu and macOS throws java.io.FileNotFoundException on this line.
+        /*mockedResponse =
             File("src\\test\\java\\com\\resources\\products\\product_detail_response.json").bufferedReader()
-                .use { it.readText() }
+                .use { it.readText() }*/
+
+        val mockedResponse = "{\n" +
+            "  \"id\": 1,\n" +
+            "  \"title\": \"Fjallraven - Foldsack No. " +
+            "1 Backpack, Fits 15 Laptops\",\n" +
+            "  \"price\": 109.95,\n" +
+            "  \"description\": \"Your perfect" +
+            " pack for everyday use and walks in the" +
+            " forest. Stash your laptop (up to 15 inches)" +
+            " in the padded sleeve, your everyday\",\n" +
+            "  \"category\": \"men's clothing\",\n" +
+            "  \"image\": \"https://fakestoreapi.com/img/" +
+            "81fPKd-2AYL._AC_SL1500_.jpg\",\n" +
+            "  \"rating\": {\n" +
+            "    \"rate\": 3.9,\n" +
+            "    \"count\": 120\n" +
+            "  }\n" +
+            "}"
 
         server.enqueue(
             MockResponse()

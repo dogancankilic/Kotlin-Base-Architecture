@@ -1,26 +1,32 @@
-name: Android build
+## 1
+name: Test and deploy
 
+## Actions that will be executed when you push code currently none
 on: pull_request
 
+## 2
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  ## 3
+  unit_tests:
+    runs-on: [ubuntu-latest]
     steps:
-        - name: Checkout
-          uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Run Lint
+        run: ./gradlew lint
 
-        - name: Set up JDK 11
-          uses: actions/setup-java@v1
-          with:
-            java-version: 11
+      - name: Run Detekt
+        run: ./gradlew detekt
 
-        - name: Run Lint
-          run: ./gradlew lint
+      - name: Unit tests
+        run: ./gradlew test
+  ## 4
+  android_tests:
+    runs-on: [ macos-latest ]
+    steps:
+      - uses: actions/checkout@v2
 
-        - name: Run Detekt
-          run: ./gradlew detekt
-
-        - name: Run Unit Tests
-          run: ./gradlew test --stacktrace
+      - name: Instrumentation Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew connectedAndroidTest

@@ -1,0 +1,413 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.databinding:databinding-adapters:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e1abfde939ae7fce121f3c4e82354744\databinding-adapters-4.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8e445c26a86c2664ce1f397bf5f1e59a\databinding-runtime-4.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:17:1-40:12
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\83be5f03775c152e6185531b3a7e8146\jetified-paging-runtime-ktx-3.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.paging:paging-runtime:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9ca7e3dcdcc656f1a9f601dc7a99a7c7\paging-runtime-3.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\077be78fc8edcda09d703288dfee5be4\navigation-fragment-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\99352209ef7e21e045ff662b51d9d569\navigation-fragment-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a4a2ffa56a42d3ba1c22b07a753ad31b\jetified-fragment-ktx-1.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cec4543862e09811a518513661538a0e\navigation-ui-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4995fa9cc6ed6d8714d05d11c10d5ce4\navigation-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6bf7ba683e9427f50c69f3f5525c49c8\navigation-ui-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\22ff4e3a20181031be343a81a545c865\navigation-runtime-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\daac7803e393fa843d67423cc2a9c642\jetified-activity-ktx-1.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c623a75f2a4a32856ab43e572725d898\navigation-common-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2c42731736ec260c0ac900923a77cd48\navigation-common-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d2bff4c0a792900d7dde93272969d736\material-1.4.0-beta01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\717cb253c75330c4c9d78e5c0390f130\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c696402779f70dae99f767111856f930\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dbb09e94f86114b9e37df16e7c70a462\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:hilt-android:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b84b51d56325a875ee9ca9503f5ff8a7\jetified-hilt-android-2.41\AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bafddb9d3c9ace89e05654034a664a57\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8688df74274cb84489f5edf79f23629b\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\aa839ec47e84cef351b5a065702cd7d3\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\007b55a0e7205628168e17ac0cd21490\fragment-1.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7f11244d1a216508d58aa6faa95b667b\jetified-activity-1.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\36032d0c05091156ad03330619381a48\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\fffc7cf50bdb884e90c2133feed9b891\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6205fe1f0c16e54003e0d33d6ce8116c\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a1ff9051a516cb52b63ff32f61f8b771\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\27d18163da9c48343e01a05e796cf5df\jetified-lifecycle-viewmodel-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c09fea5f2852d822538484fe0e72241e\lifecycle-viewmodel-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d6235dbd536e460e4d33dcab7c9700d6\jetified-lifecycle-viewmodel-savedstate-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9144a1503e579b4c33e4f16de2694f7e\jetified-core-ktx-1.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4ae375dbf1bb0f573457899ad7aed4fe\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\430111d5a5a8a0cb802c2ec7a9d9dc08\jetified-timber-5.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7c7734f8a536ad8ab14836d3aa411544\jetified-lifecycle-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a6bbf087e92a3c2822281f9a603760d1\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b062f28ea013359d50758062d96d897f\jetified-lifecycle-livedata-core-ktx-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\07d40736c286e0c9f0488f29fccf8a56\jetified-savedstate-ktx-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\64ccd64043b3a2e3a2a8393d02989854\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1ce071702dd93a4fd26d54d32524f344\espresso-idling-resource-3.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:17:1-53:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dcda395437f3ccca602885edc36289f3\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [me.relex:circleindicator:2.1.6] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\39200dfeff5d8a76d6a854c690f0d884\jetified-circleindicator-2.1.6\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cf525d473e4f6e29c4d5328de8a47d84\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2863e03f1d96121f3326335f15982e6c\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d770b4bc91675075bae739b1af9fde1a\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c99b2ba37fcd231e468c2c75630b8fc\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1100bc8e5d4adc01955aa15343298975\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d1cab44f0f222b8f8888755ecf9b4afd\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\213c82d9bee6332770e8c7d5c3012e11\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8aa8a8bb36bc98225651ff639d275832\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b570eed3eff2e2ee748b71d41b8cef2e\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\420c83d0d945380077145dbaed1965b5\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a7e6e35e9ce6ca6adf0b12ccab2e8640\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\10f66b21d3e8121f2cecdf610f742d2f\lifecycle-runtime-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\0490263ca3c7e906b95081b4748e0db4\lifecycle-livedata-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\50e34bef56791b9af0669ec087d09c1a\lifecycle-livedata-core-2.5.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bf1f6f8c5e7e534ba8cd5bf61cd9f313\jetified-savedstate-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\577d4c81c18d8e6c7a2c86ec375b9ff9\jetified-viewbinding-4.1.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\61adf3a48f9b0924cbed5908cfeb8348\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7b52cd8550d4d1bba87c349447d0919d\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4978c76b12b6f665fabe2e95fc70c6f4\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d0b73cac2b252f9009f4f9180b447354\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\708d58472f7d56a17ab83865eaeb927b\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test:monitor:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ec32b1442652eede6dcd915491af36c4\monitor-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c02ce6e4a873016c3ce629dd755dd3b\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6b688cb88fed9100a605bdcd6fd85384\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a0cb757f9327749db41195732c01941a\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ba002a8057c73744d9a7f078518b6d45\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1c327b85abceff8aac6943dd76833c0c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\718197a822e9b2237a4292b40bf8fa90\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7df4f911e03ac4b0a34743f1e2f6c6fb\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\47926b3467a5844ecf24a866e8326c03\jetified-dagger-lint-aar-2.41\AndroidManifest.xml:16:1-19:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:2:1-11:12
+	package
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:27:5-38:19
+MERGED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d2bff4c0a792900d7dde93272969d736\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d2bff4c0a792900d7dde93272969d736\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\717cb253c75330c4c9d78e5c0390f130\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\717cb253c75330c4c9d78e5c0390f130\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bafddb9d3c9ace89e05654034a664a57\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bafddb9d3c9ace89e05654034a664a57\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\aa839ec47e84cef351b5a065702cd7d3\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\aa839ec47e84cef351b5a065702cd7d3\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\430111d5a5a8a0cb802c2ec7a9d9dc08\jetified-timber-5.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\430111d5a5a8a0cb802c2ec7a9d9dc08\jetified-timber-5.0.1\AndroidManifest.xml:7:5-20
+MERGED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:26:5-51:19
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:26:5-51:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\61adf3a48f9b0924cbed5908cfeb8348\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\61adf3a48f9b0924cbed5908cfeb8348\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d0b73cac2b252f9009f4f9180b447354\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d0b73cac2b252f9009f4f9180b447354\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:10:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:8:9-43
+	android:roundIcon
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:14:9-60
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:14:9-60
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:12:9-59
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:12:9-59
+activity#com.dogancankilic.kotlinbase.presentation.main.MainActivity
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:15:19-93
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e1abfde939ae7fce121f3c4e82354744\databinding-adapters-4.1.2\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e1abfde939ae7fce121f3c4e82354744\databinding-adapters-4.1.2\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8e445c26a86c2664ce1f397bf5f1e59a\databinding-runtime-4.1.2\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8e445c26a86c2664ce1f397bf5f1e59a\databinding-runtime-4.1.2\AndroidManifest.xml:22:5-44
+MERGED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:20:5-23:54
+MERGED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:20:5-23:54
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\83be5f03775c152e6185531b3a7e8146\jetified-paging-runtime-ktx-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\83be5f03775c152e6185531b3a7e8146\jetified-paging-runtime-ktx-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9ca7e3dcdcc656f1a9f601dc7a99a7c7\paging-runtime-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime:3.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9ca7e3dcdcc656f1a9f601dc7a99a7c7\paging-runtime-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\077be78fc8edcda09d703288dfee5be4\navigation-fragment-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\077be78fc8edcda09d703288dfee5be4\navigation-fragment-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\99352209ef7e21e045ff662b51d9d569\navigation-fragment-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\99352209ef7e21e045ff662b51d9d569\navigation-fragment-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a4a2ffa56a42d3ba1c22b07a753ad31b\jetified-fragment-ktx-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a4a2ffa56a42d3ba1c22b07a753ad31b\jetified-fragment-ktx-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cec4543862e09811a518513661538a0e\navigation-ui-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cec4543862e09811a518513661538a0e\navigation-ui-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4995fa9cc6ed6d8714d05d11c10d5ce4\navigation-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4995fa9cc6ed6d8714d05d11c10d5ce4\navigation-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6bf7ba683e9427f50c69f3f5525c49c8\navigation-ui-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6bf7ba683e9427f50c69f3f5525c49c8\navigation-ui-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\22ff4e3a20181031be343a81a545c865\navigation-runtime-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\22ff4e3a20181031be343a81a545c865\navigation-runtime-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\daac7803e393fa843d67423cc2a9c642\jetified-activity-ktx-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\daac7803e393fa843d67423cc2a9c642\jetified-activity-ktx-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c623a75f2a4a32856ab43e572725d898\navigation-common-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c623a75f2a4a32856ab43e572725d898\navigation-common-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2c42731736ec260c0ac900923a77cd48\navigation-common-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2c42731736ec260c0ac900923a77cd48\navigation-common-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d2bff4c0a792900d7dde93272969d736\material-1.4.0-beta01\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d2bff4c0a792900d7dde93272969d736\material-1.4.0-beta01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\717cb253c75330c4c9d78e5c0390f130\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\717cb253c75330c4c9d78e5c0390f130\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c696402779f70dae99f767111856f930\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c696402779f70dae99f767111856f930\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dbb09e94f86114b9e37df16e7c70a462\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dbb09e94f86114b9e37df16e7c70a462\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:hilt-android:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b84b51d56325a875ee9ca9503f5ff8a7\jetified-hilt-android-2.41\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b84b51d56325a875ee9ca9503f5ff8a7\jetified-hilt-android-2.41\AndroidManifest.xml:18:3-42
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bafddb9d3c9ace89e05654034a664a57\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bafddb9d3c9ace89e05654034a664a57\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8688df74274cb84489f5edf79f23629b\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8688df74274cb84489f5edf79f23629b\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\aa839ec47e84cef351b5a065702cd7d3\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\aa839ec47e84cef351b5a065702cd7d3\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\007b55a0e7205628168e17ac0cd21490\fragment-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\007b55a0e7205628168e17ac0cd21490\fragment-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7f11244d1a216508d58aa6faa95b667b\jetified-activity-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7f11244d1a216508d58aa6faa95b667b\jetified-activity-1.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\36032d0c05091156ad03330619381a48\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\36032d0c05091156ad03330619381a48\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\fffc7cf50bdb884e90c2133feed9b891\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\fffc7cf50bdb884e90c2133feed9b891\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6205fe1f0c16e54003e0d33d6ce8116c\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6205fe1f0c16e54003e0d33d6ce8116c\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a1ff9051a516cb52b63ff32f61f8b771\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a1ff9051a516cb52b63ff32f61f8b771\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\27d18163da9c48343e01a05e796cf5df\jetified-lifecycle-viewmodel-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\27d18163da9c48343e01a05e796cf5df\jetified-lifecycle-viewmodel-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c09fea5f2852d822538484fe0e72241e\lifecycle-viewmodel-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\c09fea5f2852d822538484fe0e72241e\lifecycle-viewmodel-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d6235dbd536e460e4d33dcab7c9700d6\jetified-lifecycle-viewmodel-savedstate-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d6235dbd536e460e4d33dcab7c9700d6\jetified-lifecycle-viewmodel-savedstate-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9144a1503e579b4c33e4f16de2694f7e\jetified-core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9144a1503e579b4c33e4f16de2694f7e\jetified-core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4ae375dbf1bb0f573457899ad7aed4fe\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4ae375dbf1bb0f573457899ad7aed4fe\jetified-lifecycle-livedata-ktx-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\430111d5a5a8a0cb802c2ec7a9d9dc08\jetified-timber-5.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\430111d5a5a8a0cb802c2ec7a9d9dc08\jetified-timber-5.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7c7734f8a536ad8ab14836d3aa411544\jetified-lifecycle-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7c7734f8a536ad8ab14836d3aa411544\jetified-lifecycle-runtime-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a6bbf087e92a3c2822281f9a603760d1\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a6bbf087e92a3c2822281f9a603760d1\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b062f28ea013359d50758062d96d897f\jetified-lifecycle-livedata-core-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b062f28ea013359d50758062d96d897f\jetified-lifecycle-livedata-core-ktx-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\07d40736c286e0c9f0488f29fccf8a56\jetified-savedstate-ktx-1.2.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\07d40736c286e0c9f0488f29fccf8a56\jetified-savedstate-ktx-1.2.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\64ccd64043b3a2e3a2a8393d02989854\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\64ccd64043b3a2e3a2a8393d02989854\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1ce071702dd93a4fd26d54d32524f344\espresso-idling-resource-3.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1ce071702dd93a4fd26d54d32524f344\espresso-idling-resource-3.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dcda395437f3ccca602885edc36289f3\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\dcda395437f3ccca602885edc36289f3\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [me.relex:circleindicator:2.1.6] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\39200dfeff5d8a76d6a854c690f0d884\jetified-circleindicator-2.1.6\AndroidManifest.xml:7:5-9:41
+MERGED from [me.relex:circleindicator:2.1.6] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\39200dfeff5d8a76d6a854c690f0d884\jetified-circleindicator-2.1.6\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cf525d473e4f6e29c4d5328de8a47d84\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\cf525d473e4f6e29c4d5328de8a47d84\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2863e03f1d96121f3326335f15982e6c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\2863e03f1d96121f3326335f15982e6c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d770b4bc91675075bae739b1af9fde1a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d770b4bc91675075bae739b1af9fde1a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c99b2ba37fcd231e468c2c75630b8fc\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c99b2ba37fcd231e468c2c75630b8fc\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1100bc8e5d4adc01955aa15343298975\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1100bc8e5d4adc01955aa15343298975\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d1cab44f0f222b8f8888755ecf9b4afd\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d1cab44f0f222b8f8888755ecf9b4afd\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\213c82d9bee6332770e8c7d5c3012e11\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\213c82d9bee6332770e8c7d5c3012e11\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8aa8a8bb36bc98225651ff639d275832\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\8aa8a8bb36bc98225651ff639d275832\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b570eed3eff2e2ee748b71d41b8cef2e\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\b570eed3eff2e2ee748b71d41b8cef2e\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\420c83d0d945380077145dbaed1965b5\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\420c83d0d945380077145dbaed1965b5\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a7e6e35e9ce6ca6adf0b12ccab2e8640\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a7e6e35e9ce6ca6adf0b12ccab2e8640\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0-alpha04] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\e030ad833ccca6a57f480cb3bb9b30b9\core-1.8.0-alpha04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\10f66b21d3e8121f2cecdf610f742d2f\lifecycle-runtime-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\10f66b21d3e8121f2cecdf610f742d2f\lifecycle-runtime-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\0490263ca3c7e906b95081b4748e0db4\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\0490263ca3c7e906b95081b4748e0db4\lifecycle-livedata-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\50e34bef56791b9af0669ec087d09c1a\lifecycle-livedata-core-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0-alpha02] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\50e34bef56791b9af0669ec087d09c1a\lifecycle-livedata-core-2.5.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bf1f6f8c5e7e534ba8cd5bf61cd9f313\jetified-savedstate-1.2.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0-alpha01] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\bf1f6f8c5e7e534ba8cd5bf61cd9f313\jetified-savedstate-1.2.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\577d4c81c18d8e6c7a2c86ec375b9ff9\jetified-viewbinding-4.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\577d4c81c18d8e6c7a2c86ec375b9ff9\jetified-viewbinding-4.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\61adf3a48f9b0924cbed5908cfeb8348\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\61adf3a48f9b0924cbed5908cfeb8348\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7b52cd8550d4d1bba87c349447d0919d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7b52cd8550d4d1bba87c349447d0919d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4978c76b12b6f665fabe2e95fc70c6f4\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\4978c76b12b6f665fabe2e95fc70c6f4\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d0b73cac2b252f9009f4f9180b447354\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\d0b73cac2b252f9009f4f9180b447354\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\708d58472f7d56a17ab83865eaeb927b\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\708d58472f7d56a17ab83865eaeb927b\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:monitor:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ec32b1442652eede6dcd915491af36c4\monitor-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ec32b1442652eede6dcd915491af36c4\monitor-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c02ce6e4a873016c3ce629dd755dd3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\5c02ce6e4a873016c3ce629dd755dd3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6b688cb88fed9100a605bdcd6fd85384\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\6b688cb88fed9100a605bdcd6fd85384\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a0cb757f9327749db41195732c01941a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\a0cb757f9327749db41195732c01941a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ba002a8057c73744d9a7f078518b6d45\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\ba002a8057c73744d9a7f078518b6d45\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1c327b85abceff8aac6943dd76833c0c\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1c327b85abceff8aac6943dd76833c0c\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\718197a822e9b2237a4292b40bf8fa90\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\718197a822e9b2237a4292b40bf8fa90\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7df4f911e03ac4b0a34743f1e2f6c6fb\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\7df4f911e03ac4b0a34743f1e2f6c6fb\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\47926b3467a5844ecf24a866e8326c03\jetified-dagger-lint-aar-2.41\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.41] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\47926b3467a5844ecf24a866e8326c03\jetified-dagger-lint-aar-2.41\AndroidManifest.xml:18:3-42
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml
+activity#com.dogancankilic.kotlinbase.HiltTestActivity
+ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:7:9-8:49
+	android:exported
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:8:13-37
+	android:name
+		ADDED from C:\Users\Cano\Desktop\kotlin-base\app\src\debug\AndroidManifest.xml:7:19-51
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:25:5-72
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:24:5-72
+MERGED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:24:5-72
+	android:name
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:25:22-69
+activity#androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity
+ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:28:9-37:20
+	android:multiprocess
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:31:13-40
+	android:exported
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:33:13-78
+	android:taskAffinity
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:29:13-96
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [androidx.fragment:fragment-testing:1.4.1] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\156c9666442f1300f5231123c1f3e9be\jetified-fragment-testing-1.4.1\AndroidManifest.xml:34:13-36:29
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\1da430659bc447c6fc2a487daf948bdb\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+activity#androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:29:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:28:13-99
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:35:9-42:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:37:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:36:13-95
+activity#androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:43:9-50:20
+	android:exported
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:45:13-36
+	android:theme
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from [androidx.test:core:1.4.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\9b5ef564ade8cae55c143b7b81bff24c\jetified-core-1.4.0\AndroidManifest.xml:44:13-103
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Cano\.gradle\caches\transforms-2\files-2.1\94241feebb2d13b161ab386210e593ce\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79

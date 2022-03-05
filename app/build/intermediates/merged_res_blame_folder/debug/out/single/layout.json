@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\product_list_fragment.xml",
+        "source": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\src\\main\\res\\layout\\product_list_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\product_detail_fragment.xml",
+        "source": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\src\\main\\res\\layout\\product_detail_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\product_list_item.xml",
+        "source": "C:\\Users\\Cano\\Desktop\\kotlin-base\\app\\src\\main\\res\\layout\\product_list_item.xml"
+    }
+]

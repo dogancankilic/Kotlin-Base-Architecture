@@ -1,0 +1,1 @@
+com.dogancankilic.kotlin_base_architecture

@@ -11,6 +11,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
     <application
         android:name="com.dogancankilic.kotlinbase.di.App"
         android:allowBackup="true"
@@ -21,6 +29,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.KotlinBaseArchitecture" >
         <activity
             android:name="com.dogancankilic.kotlinbase.HiltTestActivity"
@@ -42,6 +51,34 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:label="@string/chucker_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.chuckerteam.chucker.task"
+            android:theme="@style/Chucker.Theme" />
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity"
+            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:theme="@style/Chucker.Theme" />
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity"
+            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:theme="@style/Chucker.Theme" />
+
+        <service
+            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider"
+            android:authorities="com.dogancankilic.kotlin_base_architecture.com.chuckerteam.chucker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/chucker_provider_paths" />
+        </provider>
 
         <uses-library
             android:name="androidx.window.extensions"
@@ -80,6 +117,11 @@
             android:authorities="com.dogancankilic.kotlin_base_architecture.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>

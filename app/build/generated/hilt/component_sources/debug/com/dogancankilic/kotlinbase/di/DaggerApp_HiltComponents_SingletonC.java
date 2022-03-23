@@ -20,6 +20,9 @@ import com.dogancankilic.kotlinbase.presentation.productdetail.ProductDetailFrag
 import com.dogancankilic.kotlinbase.presentation.productdetail.ProductDetailViewModel;
 import com.dogancankilic.kotlinbase.presentation.products.ProductListFragment;
 import com.dogancankilic.kotlinbase.presentation.products.ProductListFragmentViewModel;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.ImmutableSet;
+import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -37,7 +40,6 @@ import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideAppl
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
-import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 import javax.inject.Provider;
@@ -84,7 +86,7 @@ public final class DaggerApp_HiltComponents_SingletonC extends App_HiltComponent
 
   @Override
   public Set<Boolean> getDisableFragmentGetContextFix() {
-    return Collections.<Boolean>emptySet();
+    return ImmutableSet.<Boolean>of();
   }
 
   @Override
@@ -393,11 +395,13 @@ public final class DaggerApp_HiltComponents_SingletonC extends App_HiltComponent
       return new ViewWithFragmentCBuilder(singletonC, activityRetainedCImpl, activityCImpl, fragmentCImpl);
     }
 
+    @CanIgnoreReturnValue
     private ProductDetailFragment injectProductDetailFragment2(ProductDetailFragment instance) {
       BaseFragment_MembersInjector.injectViewModel(instance, productDetailViewModel());
       return instance;
     }
 
+    @CanIgnoreReturnValue
     private ProductListFragment injectProductListFragment2(ProductListFragment instance) {
       BaseFragment_MembersInjector.injectViewModel(instance, productListFragmentViewModel());
       return instance;
@@ -449,12 +453,12 @@ public final class DaggerApp_HiltComponents_SingletonC extends App_HiltComponent
 
     @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
-      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonC.applicationContextModule), Collections.<String>emptySet(), new ViewModelCBuilder(singletonC, activityRetainedCImpl));
+      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonC.applicationContextModule), ImmutableSet.<String>of(), new ViewModelCBuilder(singletonC, activityRetainedCImpl));
     }
 
     @Override
     public Set<String> getViewModelKeys() {
-      return Collections.<String>emptySet();
+      return ImmutableSet.<String>of();
     }
 
     @Override
@@ -472,6 +476,7 @@ public final class DaggerApp_HiltComponents_SingletonC extends App_HiltComponent
       return new ViewCBuilder(singletonC, activityRetainedCImpl, activityCImpl);
     }
 
+    @CanIgnoreReturnValue
     private MainActivity injectMainActivity2(MainActivity instance) {
       BaseActivity_MembersInjector.injectViewModel(instance, new MainViewModel());
       return instance;
@@ -495,7 +500,7 @@ public final class DaggerApp_HiltComponents_SingletonC extends App_HiltComponent
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>emptyMap();
+      return ImmutableMap.<String, Provider<ViewModel>>of();
     }
   }
 

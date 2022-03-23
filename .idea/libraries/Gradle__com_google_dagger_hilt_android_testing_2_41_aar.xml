@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.dagger:hilt-android-testing:2.41@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ca885622b78c0abe728df96dabf53d9/jetified-hilt-android-testing-2.41/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ca885622b78c0abe728df96dabf53d9/jetified-hilt-android-testing-2.41/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/213b01161f2a04fb116b9a2e59a59863/jetified-hilt-android-testing-2.41/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ca885622b78c0abe728df96dabf53d9/jetified-hilt-android-testing-2.41/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ca885622b78c0abe728df96dabf53d9/jetified-hilt-android-testing-2.41/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

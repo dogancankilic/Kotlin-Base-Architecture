@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: io.mockk:mockk-android:1.12.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2613f758443c7058bb5ba161a3d49bcf/jetified-mockk-android-1.12.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2613f758443c7058bb5ba161a3d49bcf/jetified-mockk-android-1.12.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86ceb87fd0484d018908f52cf55c55ce/jetified-mockk-android-1.12.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2613f758443c7058bb5ba161a3d49bcf/jetified-mockk-android-1.12.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2613f758443c7058bb5ba161a3d49bcf/jetified-mockk-android-1.12.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

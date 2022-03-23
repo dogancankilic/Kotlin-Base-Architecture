@@ -442,6 +442,29 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="chucker_background_span_color">#ffffff00</color>
+    <color name="chucker_chessboard_even_square_dark">#182531</color>
+    <color name="chucker_chessboard_even_square_light">#F8FAFC</color>
+    <color name="chucker_chessboard_odd_square_dark">#01101D</color>
+    <color name="chucker_chessboard_odd_square_light">#D2DADF</color>
+    <color name="chucker_color_background">#ffffff</color>
+    <color name="chucker_color_error">#F44336</color>
+    <color name="chucker_color_on_background">#000000</color>
+    <color name="chucker_color_on_error">#ffffff</color>
+    <color name="chucker_color_on_primary">#ffffff</color>
+    <color name="chucker_color_on_secondary">#000000</color>
+    <color name="chucker_color_on_surface">#000000</color>
+    <color name="chucker_color_primary">#01579b</color>
+    <color name="chucker_color_primary_variant">#002f6c</color>
+    <color name="chucker_color_secondary">#009E09</color>
+    <color name="chucker_color_surface">#ffffff</color>
+    <color name="chucker_foreground_span_color">#ffff0000</color>
+    <color name="chucker_status_300">#0D47A1</color>
+    <color name="chucker_status_400">#FF9800</color>
+    <color name="chucker_status_500">#B71C1C</color>
+    <color name="chucker_status_default">#212121</color>
+    <color name="chucker_status_error">#F44336</color>
+    <color name="chucker_status_requested">#9E9E9E</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -623,6 +646,12 @@
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="chucker_base_grid">8dp</dimen>
+    <dimen name="chucker_doub_grid">16dp</dimen>
+    <dimen name="chucker_half_grid">4dp</dimen>
+    <dimen name="chucker_item_size">56dp</dimen>
+    <dimen name="chucker_octa_grid">64dp</dimen>
+    <dimen name="chucker_quad_grid">32dp</dimen>
     <dimen name="clock_face_margin_start">64dp</dimen>
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
@@ -1150,6 +1179,70 @@
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <string name="chip_text">Chip text</string>
+    <string name="chucker_binary_data">binary data</string>
+    <string name="chucker_body_content_truncated">\n\n--- Content truncated ---</string>
+    <string name="chucker_body_empty">(body is empty)</string>
+    <string name="chucker_body_omitted">(encoded or binary body omitted)</string>
+    <string name="chucker_body_unexpected_eof">\n\n--- Unexpected end of content ---</string>
+    <string name="chucker_cancel">Cancel</string>
+    <string name="chucker_check_readme"><a href="https://github.com/ChuckerTeam/chucker/blob/develop/README.md#configure-">Check the setup instructions on GitHub</a></string>
+    <string name="chucker_clear">Clear</string>
+    <string name="chucker_clear_http_confirmation">Do you want to clear complete network calls history?</string>
+    <string name="chucker_clear_throwable_confirmation">Do you want to clear complete throwables history?</string>
+    <string name="chucker_duration">Duration</string>
+    <string name="chucker_encode_url">Encode URL</string>
+    <string name="chucker_export">Export</string>
+    <string name="chucker_export_empty_text">Nothing to export</string>
+    <string name="chucker_export_http_confirmation">Do you want to export all network transactions?</string>
+    <string name="chucker_export_no_file">Failed to create file for export</string>
+    <string name="chucker_export_postfix">/*  Export End  */</string>
+    <string name="chucker_export_prefix">/* Export Start */</string>
+    <string name="chucker_export_separator">==================</string>
+    <string name="chucker_file_not_saved">Failed to save file</string>
+    <string name="chucker_file_saved">File saved successfully!</string>
+    <string name="chucker_http_notification_title">Recording HTTP activity</string>
+    <string name="chucker_method">Method</string>
+    <string name="chucker_name">Chucker</string>
+    <string name="chucker_network_notification_category">Chucker network requests</string>
+    <string name="chucker_network_tutorial">This tab displays network requests recorded with the ChuckerInterceptor. Add the interceptor to your OkHttp client to reap the benefits.</string>
+    <string name="chucker_no">No</string>
+    <string name="chucker_overview">Overview</string>
+    <string name="chucker_protocol">Protocol</string>
+    <string name="chucker_request">Request</string>
+    <string name="chucker_request_is_empty">This request is empty</string>
+    <string name="chucker_request_not_ready">The request isn\'t ready for sharing or saving</string>
+    <string name="chucker_request_size">Request size</string>
+    <string name="chucker_request_time">Request time</string>
+    <string name="chucker_response">Response</string>
+    <string name="chucker_response_is_empty">This response is empty</string>
+    <string name="chucker_response_size">Response size</string>
+    <string name="chucker_response_time">Response time</string>
+    <string name="chucker_save">Save body to file</string>
+    <string name="chucker_save_failed_to_open_document">Failed to open file chooser</string>
+    <string name="chucker_search">Search</string>
+    <string name="chucker_setup">Setup</string>
+    <string name="chucker_share">Share</string>
+    <string name="chucker_share_all_transactions_subject">All transactions</string>
+    <string name="chucker_share_all_transactions_title">Share transactions</string>
+    <string name="chucker_share_as_curl">Share as curl command</string>
+    <string name="chucker_share_as_file">Share as file</string>
+    <string name="chucker_share_as_text">Share as text</string>
+    <string name="chucker_share_throwable_content"><![CDATA[Date: %1$s\nException: %2$s\nTag: %3$s\nMessage: %4$s\n\n%5$s]]></string>
+    <string name="chucker_share_throwable_subject">Throwable details</string>
+    <string name="chucker_share_throwable_title">Share throwable details</string>
+    <string name="chucker_share_transaction_subject">Transaction details</string>
+    <string name="chucker_share_transaction_title">Share transaction details</string>
+    <string name="chucker_ssl">SSL</string>
+    <string name="chucker_status">Status</string>
+    <string name="chucker_tab_errors">Errors</string>
+    <string name="chucker_tab_network">Network</string>
+    <string name="chucker_throwable_notification_category">Chucker throwables</string>
+    <string name="chucker_throwable_tutorial">This tab displays throwables recorded with the ChuckerCollector.onError method. Call this method when an error is thrown to check your stacktrace live.</string>
+    <string name="chucker_tls_cipher_suite">Cipher Suite</string>
+    <string name="chucker_tls_version">TLS version</string>
+    <string name="chucker_total_size">Total size</string>
+    <string name="chucker_url">URL</string>
+    <string name="chucker_yes">Yes</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
@@ -3249,6 +3342,35 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="Chucker.BaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+      <item name="colorPrimary">@color/chucker_color_primary</item>
+      <item name="colorPrimaryDark">@color/chucker_color_primary_variant</item>
+      <item name="colorSecondary">@color/chucker_color_secondary</item>
+      <item name="android:colorBackground">@color/chucker_color_background</item>
+      <item name="colorSurface">@color/chucker_color_surface</item>
+      <item name="colorError">@color/chucker_status_error</item>
+      <item name="colorOnPrimary">@color/chucker_color_on_primary</item>
+      <item name="colorOnSecondary">@color/chucker_color_on_secondary</item>
+      <item name="colorOnBackground">@color/chucker_color_on_background</item>
+      <item name="colorOnSurface">@color/chucker_color_on_surface</item>
+      <item name="colorOnError">@color/chucker_color_on_error</item>
+    </style>
+    <style name="Chucker.TextAppearance.Label" parent="android:TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Chucker.TextAppearance.ListItem" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Chucker.TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="Chucker.TextAppearance.Value" parent="android:TextAppearance.Small">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+    <style name="Chucker.Theme" parent="Chucker.BaseTheme"/>
     <style name="EmptyTheme"/>
     <style name="FragmentScenarioEmptyFragmentActivityTheme" parent="android:Theme.WithActionBar">
         <item name="android:windowIsFloating">false</item>
@@ -6472,6 +6594,12 @@
     </attr>
     <!-- The maximum number of lines to display in the expanded state. Experimental Feature. -->
     <attr format="integer" name="maxLines"/>
+    <!-- Whether the system window inset top should be applied regardless of
+         what the layout_height is set to. Experimental Feature. -->
+    <attr format="boolean" name="forceApplySystemWindowInsetTop"/>
+    <!-- Whether extra height should be added when the title text spans across
+         multiple lines. Experimental Feature. -->
+    <attr format="boolean" name="extraMultilineHeightEnabled"/>
   </declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout_Layout">
     <attr name="layout_collapseMode">

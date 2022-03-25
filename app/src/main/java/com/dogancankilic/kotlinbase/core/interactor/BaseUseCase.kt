@@ -1,6 +1,8 @@
 package com.dogancankilic.kotlinbase.core.interactor
 
-import com.dogancankilic.kotlinbase.core.util.RequestInvoker
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flow
 
 /**
  * Every UseCase must inherit [BaseUseCase] or [BaseUseCaseWithoutParams]
@@ -12,5 +14,7 @@ abstract class BaseUseCase<out Type, in Params> where Type : Any {
     suspend fun execute(
         params: Params,
     ):
-        Result<Type> = RequestInvoker.apiRequest { run(params) }
+        Flow<Result<Type>> = flow {
+        emit(Result.success(run(params)))
+    }.catch { Result.failure<Throwable>(it) }
 }

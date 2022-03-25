@@ -5,7 +5,10 @@ import com.dogancankilic.kotlinbase.data.products.ProductsDataSourceImpl
 import com.dogancankilic.kotlinbase.data.products.ProductsService
 import com.dogancankilic.kotlinbase.data.products.model.ProductsResponseModel
 import com.google.gson.GsonBuilder
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.TestCoroutineDispatcher
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
@@ -22,6 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 /**
  * Integration test with [MockWebServer]
  */
+@ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
 class ProductDetailApiTest {
 
@@ -29,6 +33,9 @@ class ProductDetailApiTest {
     val instantExecutorRule = InstantTaskExecutorRule()
     private val server = MockWebServer()
     private lateinit var productsDataSourceImpl: ProductsDataSourceImpl
+
+    @ExperimentalCoroutinesApi
+    private val testDispatcher = TestCoroutineDispatcher()
 
     // private lateinit var mockedResponse: String
 
@@ -50,7 +57,7 @@ class ProductDetailApiTest {
             .client(okHttpClient)
             .build().create(ProductsService::class.java)
 
-        productsDataSourceImpl = ProductsDataSourceImpl(service)
+        productsDataSourceImpl = ProductsDataSourceImpl(service, testDispatcher)
     }
 
     @Test
@@ -91,9 +98,14 @@ class ProductDetailApiTest {
         val expectedResponse = gson?.fromJson(mockedResponse, ProductsResponseModel::class.java)
 
         // Then
-        response.id shouldBeEqualTo expectedResponse?.id
 
-        response.title shouldBeEqualTo expectedResponse?.title
+        runBlocking {
+            response.collect { uiModel ->
+                uiModel.id shouldBeEqualTo expectedResponse?.id
+
+                uiModel.title shouldBeEqualTo expectedResponse?.title
+            }
+        }
     }
 
     @After

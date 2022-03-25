@@ -9,6 +9,8 @@ import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.Before
 import org.junit.Rule
@@ -41,8 +43,8 @@ class ProductDetailViewModelTest {
         coroutineTestRule.runBlockingTest {
 
             // Given
-            val expectedResponse = mockk<ProductsUiModel>()
-            coEvery { productDetailUseCase.execute(2) } returns Result.success(expectedResponse)
+            val expectedResponse = mockk<Flow<ProductsUiModel>>()
+            coEvery { productDetailUseCase.execute(2) } returns flow { emit(Result.success(expectedResponse)) }
 
             // When
             viewModel.getProduct("2")

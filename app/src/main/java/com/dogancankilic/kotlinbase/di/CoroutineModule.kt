@@ -8,6 +8,9 @@ import kotlinx.coroutines.Dispatchers
 import javax.inject.Singleton
 import kotlin.coroutines.CoroutineContext
 
+/**
+ * Coroutine Provider
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 class CoroutineModule {

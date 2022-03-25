@@ -3,11 +3,10 @@ package com.dogancankilic.kotlinbase.products
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.dogancankilic.kotlinbase.data.products.ProductsDataSourceImpl
 import com.dogancankilic.kotlinbase.data.products.ProductsService
-import com.dogancankilic.kotlinbase.data.products.model.ProductsResponseModel
 import com.google.gson.GsonBuilder
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.TestCoroutineDispatcher
 import okhttp3.OkHttpClient
-import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
 import org.junit.Before
@@ -17,7 +16,6 @@ import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.File
 
 /**
  * Integration test with [MockWebServer]
@@ -31,6 +29,9 @@ class ProductsListApiTest {
     private lateinit var productsDataSourceImpl: ProductsDataSourceImpl
 
     private lateinit var mockedResponse: String
+
+    @ExperimentalCoroutinesApi
+    private val testDispatcher = TestCoroutineDispatcher()
 
     private val gson = GsonBuilder()
         .setLenient()
@@ -49,7 +50,7 @@ class ProductsListApiTest {
             .client(okHttpClient)
             .build().create(ProductsService::class.java)
 
-        productsDataSourceImpl = ProductsDataSourceImpl(service)
+        productsDataSourceImpl = ProductsDataSourceImpl(service, testDispatcher)
     }
    /* @Test
     fun test() {

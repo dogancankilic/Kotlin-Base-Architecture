@@ -6,9 +6,9 @@ import androidx.lifecycle.viewModelScope
 import com.dogancankilic.kotlinbase.core.platform.BaseViewModel
 import com.dogancankilic.kotlinbase.domain.productdetail.ProductDetailUseCase
 import com.dogancankilic.kotlinbase.presentation.products.model.ProductsUiModel
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.supervisorScope
 import javax.inject.Inject
 
 /**
@@ -24,7 +24,10 @@ class ProductDetailViewModel @Inject constructor(
     fun getProduct(id: String) {
 
         viewModelScope.launch {
-            productDetailUseCase.execute(id.toInt()).collect { result ->
+            supervisorScope {
+                val backgroundJob = async { productDetailUseCase.execute(id.toInt()) }
+                val result = (backgroundJob.await())
+
                 result
                     .onSuccess { setProduct(it) }
                     .onFailure { handleHttpError(it) }
@@ -32,9 +35,7 @@ class ProductDetailViewModel @Inject constructor(
         }
     }
 
-    suspend fun setProduct(uiModel: Flow<ProductsUiModel>) {
-        uiModel.collect { value ->
-            _product.value = value
-        }
+    fun setProduct(uiModel: ProductsUiModel) {
+        _product.value = uiModel
     }
 }

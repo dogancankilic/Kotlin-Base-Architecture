@@ -34,7 +34,7 @@ class ProductDetailViewModelTest {
 
     private lateinit var viewModel: ProductDetailViewModel
 
-    var expectedResponse : ProductsUiModel? = null
+    var expectedResponse: ProductsUiModel? = null
 
     @Before
     fun setUp() {
@@ -51,7 +51,7 @@ class ProductDetailViewModelTest {
 
             // When
             viewModel.getProduct("2")
-           response.collect { expectedResponse = it }
+            response.collect { expectedResponse = it }
 
             // Then
             coVerify(exactly = 1) { productDetailUseCase.execute(2) }

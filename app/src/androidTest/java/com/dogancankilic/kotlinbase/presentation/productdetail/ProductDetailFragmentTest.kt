@@ -75,7 +75,7 @@ class ProductDetailFragmentTest {
         val productDetailUseCase = mockk<ProductDetailUseCase>()
         coEvery {
             productDetailUseCase.run(productId.toInt())
-        } returns flow { emit(model) }
+        } returns model
 
         Espresso.onView(ViewMatchers.withId(R.id.tvName))
             .check(ViewAssertions.matches(ViewMatchers.withText(title)))

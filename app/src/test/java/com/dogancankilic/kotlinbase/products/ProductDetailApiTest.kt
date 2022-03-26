@@ -34,9 +34,6 @@ class ProductDetailApiTest {
     private val server = MockWebServer()
     private lateinit var productsDataSourceImpl: ProductsDataSourceImpl
 
-    @ExperimentalCoroutinesApi
-    private val testDispatcher = TestCoroutineDispatcher()
-
     // private lateinit var mockedResponse: String
 
     private lateinit var service: ProductsService
@@ -57,7 +54,7 @@ class ProductDetailApiTest {
             .client(okHttpClient)
             .build().create(ProductsService::class.java)
 
-        productsDataSourceImpl = ProductsDataSourceImpl(service, testDispatcher)
+        productsDataSourceImpl = ProductsDataSourceImpl(service)
     }
 
     @Test
@@ -99,13 +96,9 @@ class ProductDetailApiTest {
 
         // Then
 
-        runBlocking {
-            response.collect { uiModel ->
-                uiModel.id shouldBeEqualTo expectedResponse?.id
+        response.id shouldBeEqualTo expectedResponse?.id
 
-                uiModel.title shouldBeEqualTo expectedResponse?.title
-            }
-        }
+        response.title shouldBeEqualTo expectedResponse?.title
     }
 
     @After

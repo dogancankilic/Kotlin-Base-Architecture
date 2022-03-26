@@ -46,16 +46,16 @@ class ProductDetailViewModelTest {
         coroutineTestRule.runBlockingTest {
 
             // Given
-            val response = mockk<Flow<ProductsUiModel>>(relaxed = true)
-            coEvery { productDetailUseCase.execute(2) } returns flow { emit(Result.success(response)) }
+            val expectedResponse = mockk<ProductsUiModel>()
+            coEvery { productDetailUseCase.execute(2) } returns Result.success(expectedResponse)
 
             // When
             viewModel.getProduct("2")
-            response.collect { expectedResponse = it }
+            val response = viewModel.product.value
 
             // Then
             coVerify(exactly = 1) { productDetailUseCase.execute(2) }
-            viewModel.product.value shouldBeEqualTo expectedResponse
+            response shouldBeEqualTo expectedResponse
         }
     }
 }

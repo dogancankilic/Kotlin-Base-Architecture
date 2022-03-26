@@ -50,7 +50,7 @@ class ProductsListApiTest {
             .client(okHttpClient)
             .build().create(ProductsService::class.java)
 
-        productsDataSourceImpl = ProductsDataSourceImpl(service, testDispatcher)
+        productsDataSourceImpl = ProductsDataSourceImpl(service)
     }
    /* @Test
     fun test() {

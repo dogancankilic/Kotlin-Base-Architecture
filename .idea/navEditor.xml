@@ -13,16 +13,11 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="280" />
+                            <option name="y" value="37" />
                           </Point>
                         </option>
                       </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="product_graph">
-                    <value>
-                      <LayoutPositions />
                     </value>
                   </entry>
                   <entry key="products">

@@ -26,9 +26,4 @@ abstract class BaseActivity<VB : ViewBinding, VM : BaseViewModel> : AppCompatAct
     }
 
     protected abstract fun initView()
-
-    override fun onDestroy() {
-        super.onDestroy()
-        binding = null!!
-    }
 }

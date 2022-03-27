@@ -6,9 +6,7 @@ import com.dogancankilic.kotlinbase.data.products.ProductsService
 import com.dogancankilic.kotlinbase.data.products.model.ProductsResponseModel
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.test.TestCoroutineDispatcher
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer

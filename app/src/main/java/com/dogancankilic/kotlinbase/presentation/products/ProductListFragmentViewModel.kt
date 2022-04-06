@@ -25,7 +25,7 @@ class ProductListFragmentViewModel @Inject constructor(
     fun getProducts() {
         viewModelScope.launch {
             supervisorScope {
-                val backgroundJob = async { productsUseCase.execute() }
+                val backgroundJob = async { productsUseCase.execute(Unit) }
                 val result = (backgroundJob.await())
 
                 result

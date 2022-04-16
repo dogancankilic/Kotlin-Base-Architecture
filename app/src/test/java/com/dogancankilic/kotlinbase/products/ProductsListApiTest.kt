@@ -3,11 +3,14 @@ package com.dogancankilic.kotlinbase.products
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.dogancankilic.kotlinbase.data.products.ProductsDataSourceImpl
 import com.dogancankilic.kotlinbase.data.products.ProductsService
+import com.dogancankilic.kotlinbase.data.products.model.ProductsResponseModel
 import com.google.gson.GsonBuilder
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.test.TestCoroutineDispatcher
+import kotlinx.coroutines.runBlocking
 import okhttp3.OkHttpClient
+import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
+import org.amshove.kluent.shouldBeEqualTo
+import org.amshove.kluent.shouldNotBeEmpty
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -30,9 +33,6 @@ class ProductsListApiTest {
 
     private lateinit var mockedResponse: String
 
-    @ExperimentalCoroutinesApi
-    private val testDispatcher = TestCoroutineDispatcher()
-
     private val gson = GsonBuilder()
         .setLenient()
         .create()
@@ -52,39 +52,43 @@ class ProductsListApiTest {
 
         productsDataSourceImpl = ProductsDataSourceImpl(service)
     }
-   /* @Test
-    fun test() {
-        val file = File("src/test/resources/products_list.json")
-        assertTrue(file.exists())
-    }*/
 
-    // Currently in development
     @Test
     fun testApiSuccess() {
         // Given
-        // Github actions on ubuntu and macOS throws java.io.FileNotFoundException on this line.
-    /*    mockedResponse =
-            File("src\\test\\java\\com\\resources\\products\\products_list.json").bufferedReader()
-                .use { it.readText() }
+        val content = "[\n" +
+            "            {\n" +
+            "                \"id\": 1,\n" +
+            "                \"title\": \"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops\",\n" +
+            "                \"price\": 109.95,\n" +
+            "                \"description\": \"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday\",\n" +
+            "                \"category\": \"men's clothing\",\n" +
+            "                \"image\": \"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg\",\n" +
+            "                \"rating\": {\n" +
+            "                \"rate\": 3.9,\n" +
+            "                \"count\": 120\n" +
+            "            }\n" +
+            "            }\n" +
+            "        ]"
 
         server.enqueue(
             MockResponse()
                 .setResponseCode(200)
-                .setBody(mockedResponse)
+                .setBody(content)
         )
         // When
         val response = runBlocking { productsDataSourceImpl.products() }
 
         val expectedResponse =
-            gson?.fromJson(mockedResponse, Array<ProductsResponseModel>::class.java)
-                ?.toList()*/
+            gson?.fromJson(content, Array<ProductsResponseModel>::class.java)
+                ?.toList()
 
         // Then
-      /*  response.shouldNotBeEmpty()
+        response.shouldNotBeEmpty()
 
         response shouldBeEqualTo expectedResponse
 
-         response.size shouldBeEqualTo 20*/
+        response.size shouldBeEqualTo 1
     }
 
     @After

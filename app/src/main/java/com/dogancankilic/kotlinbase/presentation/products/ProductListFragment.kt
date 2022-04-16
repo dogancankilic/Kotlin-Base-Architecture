@@ -40,12 +40,10 @@ class ProductListFragment :
         observe(viewModel.products) {
             adapter.submitList(it.data, jobOnComplete)
         }
-        if (1>10) {
-            adapter.itemClickListener = { item ->
-                onItemClick(item.id)
-            }
-        }
 
+        adapter.itemClickListener = { item ->
+            onItemClick(item.id)
+        }
     }
 
     fun onItemClick(id: String) {

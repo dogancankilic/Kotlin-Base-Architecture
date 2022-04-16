@@ -38,14 +38,14 @@ class ProductListViewModelTest {
 
             // Given
             val expectedResponse = mockk<MutableList<ProductsUiModel>>()
-            coEvery { productsUseCase.execute() } returns Result.success(expectedResponse)
+            coEvery { productsUseCase.execute(Unit) } returns Result.success(expectedResponse)
 
             // When
             viewModel.getProducts()
             val response = viewModel.products.value
 
             // Then
-            coVerify(exactly = 1) { productsUseCase.execute() }
+            coVerify(exactly = 1) { productsUseCase.execute(Unit) }
             response?.data shouldBeEqualTo expectedResponse
         }
     }

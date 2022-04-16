@@ -44,8 +44,6 @@ class ProductListFragment :
         adapter.itemClickListener = { item ->
             onItemClick(item.id)
         }
-
-
     }
 
     fun onItemClick(id: String) {
